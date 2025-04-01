@@ -42,4 +42,4 @@ React.createElement("p",{},"Im a para from react!")])]
 console.log(parent) //object
 const rootEle=ReactDOM.createRoot(document.getElementById("root"));
 // rootEle.render(heading2)
-rootEle.render(parent) // object becomes HTML
+rootEle.render(parent) // object becomes HTML(browser understandable)
