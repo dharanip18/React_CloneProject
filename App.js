@@ -1,3 +1,7 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+//creating element in javascript
 let root= document.getElementById("root");
 let para= document.createElement('p');
 para.innerHTML="You're Awesome!";
