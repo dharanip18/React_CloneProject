@@ -1,5 +1,5 @@
 # React_CloneProject
-EP 1
+# EP 1
     Set up all the tools in your laptop
     VS Code
     Chrome
@@ -49,3 +49,40 @@ EP 1
 
     parcel
     browserslist
+
+# Ep 3
+    //react
+    const heading= React.createElement(
+    "h1",
+    {},
+    "HI from FoodAPP!");
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(heading);
+
+    JSX -  makes devlopers life easy - this is not html inside javasript - its html like syntaxt - this also an object like react - js engine doesnot understand JSX - it will understand Ecma script ES6 pure javascript - jsx transpiled (converted into browsers understand) before it reaches js engine - parcel transpiles with help of babel
+    JSX => React.createElement => ReactElement - JS object => HTML
+    const jsxHeading =<h1>HI from JSX</h1>
+
+    React Component - Everything is a component in react
+        Class Based Components - old way
+        Functional Components - new way
+            is just a normal javascript function that returns some piece/bunch of jsx/react element
+
+            const Header = () =>{
+            return <h1>Heading</h1>
+            }
+
+            const Header = () =>(
+            <h1>Heading</h1>
+            )
+
+            const Header = () => <h1>Heading</h1>
+
+             const Header = function() {
+            return (<h1>Heading</h1>);
+            }
+
+            root.render(heading) //Render React Element
+            root.render(<header />) //React React Component
+
+   jsx - incase of XSS, jsx takes care of injection attacks, jsx will escape that - it will sanitizes the data

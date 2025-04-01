@@ -1,6 +1,51 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+
+const heading= React.createElement(
+    "h1",
+    {},
+    "HI from FoodAPP!");
+
+    const title = (
+        <h1>This react Element</h1>
+    )
+const Header =() =>{
+  return <h1>Heading</h1>
+}
+
+const Footer =() =>{
+    return <h1>Footer</h1>
+  }
+  
+  const AppLayout = () =>(
+  <div id="container">
+    <Header/>
+    <Header></Header>
+    {Header()}
+    {console.log("body")} 
+    {/* we can write any js code within {} */}
+    {title}
+    <Footer />
+    </div>
+  )
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(heading); //React Element
+root.render(<Header />) // React Component
+root.render(<AppLayout />)
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 //creating element in javascript
 let root= document.getElementById("root");
 let para= document.createElement('p');
@@ -35,6 +80,7 @@ const heading2= React.createElement("h2",{},"Welcome to React!");
         </div>
     </div >
 */
+/*
 const parent = React.createElement("div",{"id":"parent"},
 [React.createElement("div",{"id":"child"},
 [React.createElement("h1",{},"Im from react!"),
@@ -46,4 +92,31 @@ React.createElement("p",{},"Im a para from react!")])]
 console.log(parent) //object
 const rootEle=ReactDOM.createRoot(document.getElementById("root"));
 // rootEle.render(heading2)
-rootEle.render(parent) // object becomes HTML(browser understandable)
+rootEle.render(parent) // when we render this object to DOM it becomes HTML(browser understandable);
+--------------------------------------
+const heading= React.createElement(
+    "h1",
+    {},
+    "HI from FoodAPP!");
+
+const Header =() =>{
+  return <h1>Heading</h1>
+}
+
+const Footer =() =>{
+    return <h1>Footer</h1>
+  }
+  
+const AppLayout = () =>(
+    <div id="container">
+    <Header/>
+    {console.log("body")} // we can write any js code within {}
+    <Footer />
+    </div>
+)
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(heading); //React Element
+root.render(<Header />) // React Component
+root.render(<AppLayout />)
+
+*/
