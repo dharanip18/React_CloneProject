@@ -22,14 +22,31 @@ main{
 .navList li{
     margin-left:20px;
 }
+.btn{
+    height:40px;
+    border: 1px solid rgb(207, 207, 207);
+    color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(54, 54, 54, 0.06) 0px 1px;
+    padding:4px 10px;
+    border-radius: 4px;
+}
 .restaurantContainer{
     display:flex;
     flex-wrap: wrap;
     gap:20px;
-    justify-content: center;
+    /* justify-content: center; */
+}
+.filter{
+    margin:40px 20px;
+    display: flex;
+    column-gap: 12px;
+    button:hover{
+        border:1px solid #454545;
+    }
 }
 .restaurantCard{
-    width:22rem;
+    width:30.9%;
     padding:8px;
     &:hover{
         border-radius: 16px;
@@ -73,4 +90,26 @@ main{
 .resImg{
     height:250px;
     overflow: hidden;
+}
+
+.shimmer{
+    .resImg,.row,.m-10{
+        background-color: #dbd7d7c7;
+        border-radius: 4px;
+    }
+    .restaurantCardContent{
+        padding:20px 0;
+    }
+    .row{
+        margin-bottom: 8px;
+        height:18px
+    }
+}
+footer{
+    padding:60px 20px;
+    div{
+        margin-bottom:20px;
+        display: flex;
+        justify-content: center;
+    }
 }

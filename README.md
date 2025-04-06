@@ -86,3 +86,29 @@
             root.render(<header />) //React React Component
 
    jsx - incase of XSS, jsx takes care of injection attacks, jsx will escape that - it will sanitizes the data
+
+# Ep 5
+    Folder
+        src
+            App.js
+            components
+                Header.js
+                Body.js
+                RestaurantCard.js
+                Footer.js
+            utils
+                constants.js
+                mockData.js
+
+    we can have only one export default in one file.
+    to export multiple in single file use named export - export const  IMG_URL ="....";
+    to import named imports use {} - import {IMG_URL} from "";
+
+    useState - never create a useState outside a component
+                   - never create inside a condtion if else, function
+                   - It should be created inside a functional component at the higher level
+
+    useEffect - It has a callback function and an dependency array
+                    - If no dependency array useEffect is called on every component render
+                    - If dependency array is empty useEffect is called on initial render and just once
+

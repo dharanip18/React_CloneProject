@@ -1,8 +1,8 @@
-import foodLogo from "../images/food-logo.jpg"
+import foodLogo from "../images/food-logo.jpg";
 const Header = () =>{
     return(
       <div className="header">
-        <img src={foodLogo}/>
+        <img src={require('../images/food-logo.jpg')}/>
         <ul className="navList">
               <li>Home</li>
               <li>Contact Us</li>
